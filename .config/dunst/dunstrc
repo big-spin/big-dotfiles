@@ -1,0 +1,47 @@
+
+bal]
+    # Top-right corner
+    origin = top-right
+    offset = 12x12
+
+    # Small notifications for a 2560x1080 display
+    width = 340
+    height = 0
+    padding = 8
+    horizontal_padding = 8
+    text_icon_padding = 6
+    gap_size = 6
+
+    # Font
+    font = IosevkaTerm Nerd Font 10
+
+    # Text format
+    markup = full
+    format = "<b>%s</b>\n%b"
+
+    # Appearance
+    transparency = 0
+    corner_radius = 0
+    frame_width = 0
+    separator_height = 0
+
+    # Disable icons for a cleaner i3bar-like appearance
+    icon_position = off
+
+[urgency_low]
+    background = "#1e2127"
+    foreground = "#abb2bf"
+    frame_color = "#1e2127"
+    timeout = 4
+
+[urgency_normal]
+    background = "#1e2127"
+    foreground = "#cccccc"
+    frame_color = "#1e2127"
+    timeout = 6
+
+[urgency_critical]
+    background = "#1e2127"
+    foreground = "#e06c75"
+    frame_color = "#1e2127"
+    timeout = 0

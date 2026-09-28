@@ -1,0 +1,19 @@
+[BLUETOOTH]
+full_text=bluetooth
+command=st -e bluetui
+
+[INTERNET]
+full_text=internet
+command=st -e nmtui connect
+
+[SOUND]
+full_text=sound
+command=pavucontrol
+
+[BATTERY]
+command=printf "%d%% %s\n" "$(cat /sys/class/power_supply/BAT1/capacity)" "$(cat /sys/class/power_supply/BAT1/status | tr '[:upper:]' '[:lower:]')"
+interval=1
+
+[TIME_DATE]
+command=date "+%d/%m/%Y %H:%M"
+interval=60
