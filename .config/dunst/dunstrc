@@ -1,5 +1,5 @@
 
-bal]
+[global]
     # Top-right corner
     origin = top-right
     offset = 12x12

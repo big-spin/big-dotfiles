@@ -7,7 +7,7 @@ default_floating_border pixel 0
 
 exec_always --no-startup-id setxkbmap pt
 exec_always --no-startup-id autotiling
-exec_always --no-startup-id feh --bg-fill ~/Wallpapers/moon-light.png
+exec_always --no-startup-id feh --bg-fill ~/wallpapers/moon-light.png
 
 exec_always --no-startup-id xinput set-prop 8 "Synaptics Tap Action" 1 1 1 1 1 1 1
 
