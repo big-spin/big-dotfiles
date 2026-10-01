@@ -1,0 +1,23 @@
+theme = "onedark"
+
+[editor]
+shell = ["zsh", "-c"]
+mouse = false
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-base-name", "file-modification-indicator"]
+right = ["selections", "position-percentage"]
+
+[editor.file-picker]
+hidden = false
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'<' = '>'
+'"' = '"'
