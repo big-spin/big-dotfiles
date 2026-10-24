@@ -1,5 +1,8 @@
 [SPOTIFY]
-command=if [ "$BLOCK_BUTTON" = "1" ]; then playerctl --player=spotify play-pause; fi; printf "%s   %s\n" "$(playerctl --player=spotify metadata xesam:title)" "$(playerctl --player=spotify metadata xesam:artist)"
+# scroll up -> 4
+# scroll down -> 5
+# press block to pause, scroll up for next and down for previous song
+command=if [ "$BLOCK_BUTTON" = "1" ]; then playerctl --player=spotify play-pause; fi; if [ "$BLOCK_BUTTON" = "4" ]; then playerctl --player=spotify next; fi; if [ "$BLOCK_BUTTON" = "5" ]; then playerctl --player=spotify previous; fi; printf "%s  %s\n" "$(playerctl --player=spotify metadata xesam:title)" "$(playerctl --player=spotify metadata xesam:artist)"
 interval=1
 
 [BLUETOOTH]
