@@ -1,3 +1,7 @@
+[SPOTIFY]
+command=if [ "$BLOCK_BUTTON" = "1" ]; then playerctl --player=spotify play-pause; fi; printf "%s   %s\n" "$(playerctl --player=spotify metadata xesam:title)" "$(playerctl --player=spotify metadata xesam:artist)"
+interval=1
+
 [BLUETOOTH]
 full_text=bluetooth
 command=st -e bluetui
@@ -14,6 +18,10 @@ command=pavucontrol
 command=printf "%d%% %s\n" "$(cat /sys/class/power_supply/BAT1/capacity)" "$(cat /sys/class/power_supply/BAT1/status | tr '[:upper:]' '[:lower:]')"
 interval=1
 
-[TIME_DATE]
-command=date "+%d/%m/%Y %H:%M"
+[DATE]
+command=date "+%d/%m/%Y"
+interval=1300
+
+[TIME]
+command=date "+%H:%M "
 interval=60
